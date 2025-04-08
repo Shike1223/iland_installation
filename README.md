@@ -35,6 +35,19 @@ Run the above code to check if the qt installation is successful.
 
 ## 3. Get the iland model source code.
 
+Run the following code.
+
+```{cmd}
+git clone https://github.com/shengkai866/Iland_installation.git
+cd Iland_installation
+chmod +x iland_build.sh
+chmod +x iland_source_code.sh
+rm README.md
+./iland_source_code.sh
+```
+
+
+
 
 
 
