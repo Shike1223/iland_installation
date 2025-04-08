@@ -45,6 +45,70 @@ chmod +x iland_source_code.sh
 rm README.md
 ./iland_source_code.sh
 ```
+Then please go to the directory iland_model/src/ilandc and modify the ilandc.pro. Replace the line from 88-97 to the code in the following
+
+![image](https://github.com/user-attachments/assets/7e96ed42-76c5-493e-a4ce-b33386531b34)
+Originally Code
+
+To 
+```{cmd}
+linux-g++ {
+    # Use custom FreeImage from Spack installation
+    INCLUDEPATH += {freeImage Address: include}
+    LIBS += -L{freeImage Address: lib}
+    LIBS += -lfreeimage
+} else {
+    # fallback: external freeimage (not used on linux)
+    LIBS += -L$$THIRDPARTY_PATH/FreeImage -lFreeImage
+}
+```
+
+replace {freeImage Address} based on the output of the following code.
+
+```{cmd}
+spack find -p freeimage
+```
+
+An example of {freeImage Address: include} is "/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/include"
+
+And example of {freeImage Address: lib} is "{freeImage Address: lib}"
+
+The following is an example after replacing the code.
+
+![image](https://github.com/user-attachments/assets/1cc8c525-26c3-4a57-b622-2bb9165b70d9)
+
+
+## 4. Build the model
+
+This is the final step to build the model. Firstly, let us update the environment variable through runing the following code
+
+```{cmd}
+export LD_LIBRARY_PATH={freeImage Address: lib}:$LD_LIBRARY_PATH
+echo '{freeImage Address: lib}:$LD_LIBRARY_PATH' >> ~/.bashrc
+```
+
+Remember to replace the {freeImage Address: lib}, The following are example of the above code
+
+```{cmd}
+export LD_LIBRARY_PATH=/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/lib:$LD_LIBRARY_PATH
+echo 'export LD_LIBRARY_PATH=/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
+```
+
+Finally, run the following code to finish the build-up (I assume that you are current in the directory that contains the iland_model, but not in it yet.
+
+For example, you are in the directory "/home/name/Iland_installation", the Iland_istallation folder contains the iland_model
+
+This process may takes more than half hour.
+
+```{cmd}
+./iland_build.sh
+```
+
+## 5. Run the Model
+
+
+
+
 
 
 
