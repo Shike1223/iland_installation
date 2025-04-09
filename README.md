@@ -17,7 +17,14 @@ After downloading the Qt installer, transfer it to the Great Lakes cluster using
 
 Next step is to install the qt online installer on the Great Lakes.
 
-Firstly, turn on the basic Desktop of Great Lakes, click the installer. Then, sign in using the account that you created before.
+Firstly run the following code
+
+```{cmd}
+chmod +x qt-online-installer-linux-x64-4.8.1.run
+./qt-online-installer-linux-x64-4.8.1.run
+```
+
+Then, turn on the basic Desktop of Great Lakes, click the installer. Then, sign in using the account that you created before.
 
 ![image](https://github.com/user-attachments/assets/bb91f3c9-ca15-4f52-8d45-d70df626f03e)
 
@@ -26,6 +33,9 @@ Choose the "Custom Installation"
 ![image](https://github.com/user-attachments/assets/3acc5012-71b3-4e88-b209-cbdf143c4ed8)
 
 In the Select Components part, choose QT version 6.5.8, then wait the installation finished. (Please note that it may takes an hour to finish the installation).
+
+<img width="814" alt="09271889dbe5ebac685f0216ea4999e" src="https://github.com/user-attachments/assets/51240202-5006-4fdd-a43c-2e37bfe0729b" />
+
 
 ```{cmd}
 qmake --version
