@@ -92,6 +92,7 @@ This is the final step to build the model. Firstly, let us update the environmen
 ```{cmd}
 export LD_LIBRARY_PATH={freeImage Address: lib}:$LD_LIBRARY_PATH
 echo '{freeImage Address: lib}:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 Remember to replace the {freeImage Address: lib}, The following are example of the above code
