@@ -91,11 +91,11 @@ This is the final step to build the model. Firstly, let us update the environmen
 
 ```{cmd}
 export LD_LIBRARY_PATH={freeImage Address: lib}:$LD_LIBRARY_PATH
-echo '{freeImage Address: lib}:$LD_LIBRARY_PATH' >> ~/.bashrc
+echo '/home/<UNIQUENAME>/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Remember to replace the {freeImage Address: lib}, The following are example of the above code
+Remember to replace the “UNIQUENAME” to your uniquename, The following are example of the above code
 
 ```{cmd}
 export LD_LIBRARY_PATH=/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/lib:$LD_LIBRARY_PATH
