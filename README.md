@@ -90,7 +90,7 @@ linux-g++ {
 This is the final step to build the model. Firstly, let us update the environment variable through runing the following code
 
 ```{cmd}
-export LD_LIBRARY_PATH={freeImage Address: lib}:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/<UNIQUENAME>/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/lib:$LD_LIBRARY_PATH
 echo '/home/<UNIQUENAME>/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
