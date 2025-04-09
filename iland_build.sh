@@ -6,6 +6,6 @@ set -x
 cd iland-model/build/plugins
 qmake ../../src/plugins/plugins.pro
 make
-cd ../iladnc
+cd ../ilandc
 qmake ../../src/ilandc/ilandc.pro
 make
