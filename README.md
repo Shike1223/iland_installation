@@ -1,4 +1,4 @@
-# Iland_installation
+# iland_installation
 
 ### It is the instruction about how to install the iland on the Great Lakes
 
@@ -49,13 +49,13 @@ qmake --version
 
 Run the above code to check if the qt installation is successful.
 
-## 3. Get the iland model source code.
+## 3. Get the  model source code.
 
 Run the following code.
 
 ```{cmd}
-git clone https://github.com/shengkai866/Iland_installation.git
-cd Iland_installation
+git clone https://github.com/shengkai866/_installation.git
+cd iland_installation
 chmod +x iland_build.sh
 chmod +x iland_source_code.sh
 rm README.md
@@ -105,7 +105,7 @@ source ~/.bashrc
 
 Finally, run the following code to finish the build-up (I assume that you are current in the directory that contains the iland_model, but not in it yet.
 
-For example, you are in the directory "/home/name/Iland_installation", the Iland_istallation folder contains the iland_model
+For example, you are in the directory "/home/name/iland_installation", the iland_istallation folder contains the iland_model
 
 This process may takes more than half hour.
 
