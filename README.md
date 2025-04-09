@@ -60,6 +60,7 @@ chmod +x iland_build.sh
 chmod +x iland_source_code.sh
 rm README.md
 ./iland_source_code.sh
+cd ../src/ilandc
 ```
 Then please go to the directory iland_model/src/ilandc and modify the ilandc.pro. Replace the line from 88-97 to the code in the following
 
