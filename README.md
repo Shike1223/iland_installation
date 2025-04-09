@@ -71,8 +71,8 @@ To
 ```{cmd}
 linux-g++ {
     # Use custom FreeImage from Spack installation
-    INCLUDEPATH += {freeImage Address: include}
-    LIBS += -L{freeImage Address: lib}
+    INCLUDEPATH += /home/<UNIQUENAME>/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/include
+    LIBS += -L/home/<UNIQUENAME>/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/lib
     LIBS += -lfreeimage
 } else {
     # fallback: external freeimage (not used on linux)
@@ -80,17 +80,7 @@ linux-g++ {
 }
 ```
 
-replace {freeImage Address} based on the output of the following code.
-
-```{cmd}
-spack find -p freeimage
-```
-
-An example of {freeImage Address: include} is "/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/include"
-
-And example of {freeImage Address: lib} is "/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/include"
-
-The following is an example after replacing the code.
+#### replace "UNIQUENAME" to your uniquename.
 
 ![image](https://github.com/user-attachments/assets/1cc8c525-26c3-4a57-b622-2bb9165b70d9)
 
