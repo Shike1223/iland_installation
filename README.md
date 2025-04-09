@@ -36,6 +36,12 @@ In the Select Components part, choose QT version 6.5.8, then wait the installati
 
 <img width="814" alt="09271889dbe5ebac685f0216ea4999e" src="https://github.com/user-attachments/assets/51240202-5006-4fdd-a43c-2e37bfe0729b" />
 
+run the following command.
+```{cmd}
+echo 'export PATH=$PATH:$HOME/Qt/6.5.8/gcc_64/bin' >> ~/.bashrc
+source ~/.bashrc
+```
+Run the following code to check if the qt installation is successful.
 
 ```{cmd}
 qmake --version
@@ -81,7 +87,7 @@ spack find -p freeimage
 
 An example of {freeImage Address: include} is "/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/include"
 
-And example of {freeImage Address: lib} is "{freeImage Address: lib}"
+And example of {freeImage Address: lib} is "/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/include"
 
 The following is an example after replacing the code.
 
