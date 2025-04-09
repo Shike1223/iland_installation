@@ -3,7 +3,7 @@
 set -Eeuo pipefail
 set -x
 
-cd iland_model/plugins
+cd iland_model/build/plugins
 qmake ../../src/plugins/plugins.pro
 make
 cd ../iladnc
