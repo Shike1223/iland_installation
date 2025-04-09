@@ -108,6 +108,7 @@ Remember to replace the {freeImage Address: lib}, The following are example of t
 ```{cmd}
 export LD_LIBRARY_PATH=/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/lib:$LD_LIBRARY_PATH
 echo 'export LD_LIBRARY_PATH=/home/shengkai/.spack/opt/spack/gcc-13.2.0/freeimage/3.18.0-ko54/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 Finally, run the following code to finish the build-up (I assume that you are current in the directory that contains the iland_model, but not in it yet.
