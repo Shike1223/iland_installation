@@ -115,6 +115,26 @@ This process may takes more than half hour.
 
 ## 5. Run the Model
 
+Every time you get into the Great Lakes and prepare to run the ILAND model, please run the following command first.
+
+```{cmd}
+module load gcc/13.2.0
+module load spack
+spack load freeimage
+```
+Then we can run the model, firstly go to the iland-model/build/ilandc folder, then run the following command
+
+```{cmd}
+./ilandc path/to/data/folder/example.xml years_simulation
+```
+
+##### Replace "path/to/data/folder/example/xml" to the folder that contains the data, also replace years_simulation to the number of the year you want to simulate. The following is an example of the command.
+
+```{cmd}
+./ilandc /home/shengkai/example_folder/project.xml
+```
+
+After you run the model, you can go to the data folder and find there is another folder called output. Inside the output folder, it is a sqlite database contains the output data.
 
 
 
